@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <body>
+  <script type="text/javascript">
+    var locations = [
+      ['Sophie Caffe & Snacks - Ali Demi',	41.3273854,19.8342388,21],
+      ['Sophie Caffe - RTSH', 41.3217476,19.8229852,21],
+      ['Sophie Caffe - Garda', 41.3171051,19.8190099,21],
+      ['Sophie Caffe - Sheshi Wilson', 41.3183984,19.814935,21],
+      ['Sophie Caffe & Snacks - Gjuhet e Huaja ', 41.3192651,19.8280644,21],
+      ['Sophie Caffe - Twin Towers', 41.3220739,19.8198383,21],
+      ['Sophie Caffe & Snacks - Inxhinieria', 41.3278052,19.8028848,21],
+      ['Sophie Caffe - Rruga e Kavajes', 41.3252866,19.8023463,21],
+      ['Sophie Caffe - Don Bosco ', 41.3370022,19.8036215,21],
+      ['Sophie Caffe - Galeria', 41.3313659,19.8203097,21],
+      ['Sophie Caffe - Durres', 41.3145799,19.4473465,21],
+    ];
+
+      var infoWindow= [
+                ['<div class="info_content">' +
+                '<h6>PIKA 1 (Sophie Caffe & Snacks - Ali Demi)</h6>' +
+                '<p>Rruga Ali Demi, Tirana, Albania</p>' +
+                '<p>+355 69 706 5221</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+%26+Snacks+-+Ali+Demi/@41.3273625,19.8320608,17z/data=!3m1!4b1!4m5!3m4!1s0x1350313c5772491b:0xcb9c265a0677eebf!8m2!3d41.3273585!4d19.8342495">Vendodhja</a></p>'
+                +        '</div>'],
+          
+                ['<div class="info_content">' +
+                '<h6>PIKA 2 (Sophie Caffe - RTSH)</h6>' +
+                '<p>Rruga Papa Gjon Pali II, Tirana, Albania</p>' +
+                '<p>+355 69 404 2108</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+Rtsh/@41.3217631,19.8207759,17z/data=!3m1!4b1!4m5!3m4!1s0x1350311c745903c7:0xf7cce633835897e1!8m2!3d41.3217591!4d19.8229646">Vendodhja</a></p>' +
+                '</div>'],
+
+                ['<div class="info_content">' +
+                '<h6>PIKA 3 (Sophie Caffe - Garda)</h6>' +
+                '<p>------</p>' +
+                '<p>------</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+-+Garda/@41.3170959,19.816872,17z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x135030e2b229876d:0x6193eaaf5836d207!8m2!3d41.3170959!4d19.8190607">Vendodhja</a></p>' +
+                '</div>'],
+
+                ['<div class="info_content">' +
+                '<h6>PIKA 4 (Sophie Caffe - Sheshi Wilson)</h6>' +
+                '<p>Rruga Sami Frashëri, Tirana, Albania </p>' +
+                '<p>+355 69 605 5171 </p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+Sheshi+Wilson/@41.3177461,19.8155356,16z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x135030fd896a70f1:0x9735f4def4293b3a!8m2!3d41.3184134!4d19.8149183">Vendodhja</a></p>' +
+                '</div>'],
+          
+                ['<div class="info_content">' +
+                '<h6>PIKA 5 (Sophie Caffe & Snacks - Gjuhet e Huaja)</h6>' +
+                '<p>Rruga e Elbasanit, Tirana, Albania </p>' +
+                '<p>+355 69 605 5171</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+%26+Snacks+(+Gjuhet+e+Huaja+)/@41.3213086,19.8122071,13z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x0:0xf1490424ca063de0!8m2!3d41.3192771!4d19.8279834">Vendodhja</a></p>' +
+                '</div>'],
+          
+                ['<div class="info_content">' +
+                '<h6>PIKA 6 (Sophie Caffe - Twin Towers)</h6>' +
+                '<p>Bulevardi Dëshmorët e Kombit, Tirana, Albania</p>' +
+                '<p>+355 69 605 5171</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+Twin+Towers/@41.3426561,19.8162475,13z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x13503102dfbaaaab:0x338205cd49e2287c!8m2!3d41.3220671!4d19.819877">Vendodhja</a></p>' +
+                '</div>'],
+
+                ['<div class="info_content">' +
+                '<h6>PIKA 7 (Sophie Caffe & Snacks - Inxhinieria)</h6>' +
+                '<p>---------- </p>' +
+                '<p>+355 69 813 3204 </p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+%26+Snacks+-+Inxhinieria/@41.3278185,19.7940635,15z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x135031a91c4cb213:0x8f3dae7470fab543!8m2!3d41.3278185!4d19.8028182">Vendodhja</a></p>' +'</div>'],
+          
+                ['<div class="info_content">' +
+                '<h6>PIKA 8 (Sophie Caffe - Rruga e Kavajes)</h6>' +
+                '<p>Rruga e Kavajes, Tirana, Albania </p>' +
+                '<p>+355 69 605 5171</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+-+Rr.Kavajes/@41.3259928,19.5006826,11z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x13503105f9112399:0xaa94ddaf035fec43!8m2!3d41.3253363!4d19.8023039">Vendodhja</a></p>' +
+                '</div>'],
+                 
+                 ['<div class="info_content">' +
+                '<h6>PIKA 9 (Sophie Caffe - Don Bosco)</h6>' +
+                '<p>Don Bosco, Tirana, Albania </p>' +
+                '<p>-------</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+-+Don+Bosco/@41.3263387,19.500682,11z/data=!4m8!1m2!2m1!1ssophie+caffe!3m4!1s0x135031a1039f4ad1:0x152b19778b905a6b!8m2!3d41.3370587!4d19.8035307">Vendodhja</a></p>' +
+                '</div>'],
+          
+                ['<div class="info_content">' +
+                '<h6>PIKA 10 (Sophie Caffe - Galeria)</h6>' +
+                '<p>Rruga e Barrikadave, Tirana, Albania </p>' +
+                '<p>+355 69 605 5171</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+-+Galeria/@41.3313934,19.8202335,21z/data=!4m5!3m4!1s0x13503111e8c617c5:0x815b90c0265e9ca1!8m2!3d41.3313827!4d19.8201926">Vendodhja</a></p>' +
+                '</div>'],
+             
+                ['<div class="info_content">' +
+                '<h6>PIKA 11 (Sophie Caffe - Durres)</h6>' +
+                '<p>Bulevardi i Durresit, Durres, Albania </p>' +
+                '<p>+355 69 605 5171</p>' +
+                '<p> <a href="https://www.google.com/maps/place/Sophie+Caffe+-+Galeria/@41.3313934,19.8202335,21z/data=!4m5!3m4!1s0x13503111e8c617c5:0x815b90c0265e9ca1!8m2!3d41.3313827!4d19.8201926">Vendodhja</a></p>' +
+                '</div>'],
+            ];
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: new google.maps.LatLng(41.3321803,19.6483114),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(infoWindow[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+     </body>
+     
+  </head>
+</html>
