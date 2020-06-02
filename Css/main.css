@@ -231,32 +231,10 @@ body{
     cursor: pointer;
     color: #171717;
     text-align: center;
-    margin-right: 0;
-}
-
-.cart-info{  /*shporta ne navbar*/
-    font-size: 13px;
-    border: 0.1rem solid #171717;
-    color: #171717;
-    border-radius: 0.4rem;
-    padding: 0.4rem 0.6rem;
-    cursor: pointer;
-    transition: 1s ease-in-out;
-    width: 164px;
-    text-align: center;
-    text-decoration: none;
+    justify-content: center;
     
 }
 
-.cart-info:hover{
-    border-color: #F7EBEB;
-    color: #F7EBEB;
-    background: #171717;
-}
-
-.cart-info:hover .cart-icon{
-    color: #F7EBEB;
-}
 
 /* Sticky navbar */
 .content{
@@ -292,7 +270,7 @@ body{
   font-size: 22px;
 }
 
-.card button{ /* Butoni shtoni ne shporte*/
+.button-inf{ /* Butoni shtoni ne shporte*/
   border: none;
   outline: 0;
   padding: 5px;
@@ -304,7 +282,7 @@ body{
   font-size: 18px;
 }
 
-.card button:hover{
+.button-inf:hover{
   opacity: 0.7;
 }
 
@@ -378,21 +356,6 @@ body{
 /* ################# Fundi i rasteve #################### */
 
 
-#back-to-top{
-  display: inline-block; 
-  text-decoration: none;
-  border: 4px solid #a03123; 
-  outline: none; 
-  background-color: #F0FFBA; 
-  color: #a03123;
-  padding: 4px; 
-  border-radius: 8px ;
-  font-size: 15px;
-  width: 32px;
-  transition: 2s ease-in-out;
-  text-align: center;
-}
-
 /* #####   About us  #####*/
 
 .img-1{
@@ -438,6 +401,21 @@ body{
 
 /* Shigjeta qe con ne fillim te faqes */
 
+#back-to-top1{
+  display: inline-block; 
+  text-decoration: none;
+  border: 4px solid #171717; 
+  outline: none; 
+  background-color: #F7EBEB; 
+  color: #171717;
+  padding: 4px; 
+  border-radius: 8px ;
+  font-size: 15px;
+  width: 32px;
+  transition: 2s ease-in-out;
+  text-align: center;
+}
+
 #back-to-top:hover{
     background-color: #a03123;
     color: #F0FFBA;
@@ -450,6 +428,11 @@ body{
    bottom: 15px;
    right: 10px;
 }
+.scrollTop1{
+   position: fixed;
+   bottom: 25px;
+   right: 10px;
+}
 
 /* Fundi i Shigjetes */
 
@@ -457,8 +440,7 @@ body{
 
 .footer{
     text-align: center;
-    background: #F7EBEB;
-    padding: 2px;
+    background-color: #F7EBEB;
     border-top: 1px solid #1d951b;
     
 }
@@ -488,7 +470,7 @@ body{
 
 #top{
     font-size: 1px;
-    background: #F0FFBA;
+    background: #FFFFFF;
 }
 
 .pffff{
